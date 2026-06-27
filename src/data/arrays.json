@@ -1,0 +1,15 @@
+{
+  "description": "Sample arrays for visualization and testing",
+  "samples": [
+    { "id": "small-random", "label": "Small Random", "data": [5, 2, 9, 1, 7], "tags": ["small", "unsorted"] },
+    { "id": "medium-random", "label": "Medium Random", "data": [3, 8, 1, 6, 4, 9, 2, 7], "tags": ["medium", "unsorted"] },
+    { "id": "large-random", "label": "Large Random", "data": [12, 7, 3, 18, 9, 21, 5, 14, 10, 15], "tags": ["large", "unsorted"] },
+    { "id": "nearly-sorted", "label": "Nearly Sorted", "data": [1, 2, 3, 5, 4, 6, 7, 8, 9, 10], "tags": ["large", "nearly-sorted"] },
+    { "id": "reverse-sorted", "label": "Reverse Sorted", "data": [42, 31, 25, 19, 17, 11, 8, 6], "tags": ["medium", "reverse-sorted"] },
+    { "id": "with-duplicates", "label": "With Duplicates", "data": [7, 3, 7, 1, 9, 3, 7, 2], "tags": ["medium", "duplicates"] },
+    { "id": "single-element", "label": "Single Element", "data": [42], "tags": ["edge-case", "single"] },
+    { "id": "two-elements", "label": "Two Elements", "data": [8, 3], "tags": ["edge-case", "small"] },
+    { "id": "all-same", "label": "All Same", "data": [5, 5, 5, 5, 5, 5], "tags": ["edge-case", "uniform"] },
+    { "id": "descending", "label": "Descending", "data": [100, 91, 84, 77, 63, 52, 45, 39, 33, 28, 12, 10], "tags": ["large", "descending"] }
+  ]
+}

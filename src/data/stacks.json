@@ -1,0 +1,12 @@
+{
+  "description": "Sample stack values for visualization and testing",
+  "samples": [
+    { "id": "small-stack", "label": "Small Stack", "data": [10, 20, 30, 40], "tags": ["small"] },
+    { "id": "medium-stack", "label": "Medium Stack", "data": [5, 15, 25, 35, 45], "tags": ["medium"] },
+    { "id": "large-stack", "label": "Large Stack", "data": [100, 200, 300, 400, 500], "tags": ["large"] },
+    { "id": "single-element", "label": "Single Element", "data": [42], "tags": ["edge-case", "single"] },
+    { "id": "two-elements", "label": "Two Elements", "data": [7, 14], "tags": ["edge-case", "small"] },
+    { "id": "descending", "label": "Descending", "data": [50, 40, 30, 20, 10], "tags": ["medium", "descending"] },
+    { "id": "with-zero", "label": "With Zero", "data": [0, 1, 0, 2, 0], "tags": ["small", "edge-case"] }
+  ]
+}

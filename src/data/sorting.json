@@ -1,0 +1,15 @@
+{
+  "description": "Sample arrays for sorting algorithm visualization",
+  "samples": [
+    { "id": "classic-example", "label": "Classic Example", "data": [64, 34, 25, 12, 22, 11, 90], "tags": ["medium", "random"] },
+    { "id": "small-random", "label": "Small Random", "data": [38, 27, 43, 3, 9, 82, 10], "tags": ["small", "random"] },
+    { "id": "medium-random", "label": "Medium Random", "data": [29, 10, 14, 37, 13, 33, 48, 21], "tags": ["medium", "random"] },
+    { "id": "nearly-sorted", "label": "Nearly Sorted", "data": [5, 2, 9, 1, 7, 6, 3, 8, 4], "tags": ["medium", "nearly-sorted"] },
+    { "id": "reverse-sorted", "label": "Reverse Sorted", "data": [99, 88, 77, 66, 55, 44, 33, 22, 11], "tags": ["medium", "reverse"] },
+    { "id": "with-duplicates", "label": "With Duplicates", "data": [7, 3, 7, 1, 9, 3, 7, 2, 5], "tags": ["medium", "duplicates"] },
+    { "id": "already-sorted", "label": "Already Sorted", "data": [1, 2, 3, 4, 5, 6, 7, 8], "tags": ["medium", "sorted"] },
+    { "id": "single-element", "label": "Single Element", "data": [42], "tags": ["edge-case", "single"] },
+    { "id": "two-elements", "label": "Two Elements", "data": [9, 3], "tags": ["edge-case", "small"] },
+    { "id": "all-same", "label": "All Same", "data": [5, 5, 5, 5, 5, 5, 5], "tags": ["edge-case", "uniform"] }
+  ]
+}

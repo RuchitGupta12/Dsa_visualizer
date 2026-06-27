@@ -1,0 +1,13 @@
+{
+  "description": "Sample linked list values for visualization and testing",
+  "samples": [
+    { "id": "small-list", "label": "Small List", "data": [10, 20, 30, 40, 50], "tags": ["small"] },
+    { "id": "medium-list", "label": "Medium List", "data": [5, 15, 25, 35, 45, 55], "tags": ["medium"] },
+    { "id": "short-list", "label": "Short List", "data": [100, 200, 300], "tags": ["small", "edge-case"] },
+    { "id": "long-list", "label": "Long List", "data": [7, 14, 21, 28, 35, 42, 49], "tags": ["medium"] },
+    { "id": "single-node", "label": "Single Node", "data": [42], "tags": ["edge-case", "single"] },
+    { "id": "two-nodes", "label": "Two Nodes", "data": [99, 1], "tags": ["edge-case", "small"] },
+    { "id": "descending", "label": "Descending", "data": [50, 40, 30, 20, 10], "tags": ["small", "reverse"] },
+    { "id": "with-duplicates", "label": "With Duplicates", "data": [3, 7, 3, 9, 7], "tags": ["small", "duplicates"] }
+  ]
+}

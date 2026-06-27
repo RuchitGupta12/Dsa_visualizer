@@ -1,0 +1,22 @@
+{
+  "description": "Sample arrays and targets for searching algorithm visualization",
+  "linearSamples": [
+    { "id": "found-start", "label": "Found at Start", "array": [5, 2, 9, 1, 7], "target": 5, "tags": ["small", "found"] },
+    { "id": "found-middle", "label": "Found in Middle", "array": [3, 8, 1, 6, 4, 9, 2], "target": 4, "tags": ["medium", "found"] },
+    { "id": "not-found", "label": "Not Found", "array": [12, 7, 3, 18, 9, 21], "target": 15, "tags": ["medium", "not-found"] },
+    { "id": "found-end", "label": "Found at End", "array": [4, 8, 2, 1, 9, 7, 3], "target": 3, "tags": ["medium", "found"] },
+    { "id": "single-found", "label": "Single Element Found", "array": [42], "target": 42, "tags": ["edge-case", "single"] },
+    { "id": "single-not-found", "label": "Single Not Found", "array": [42], "target": 7, "tags": ["edge-case", "single"] },
+    { "id": "with-duplicates", "label": "With Duplicates", "array": [7, 3, 7, 1, 9], "target": 7, "tags": ["small", "duplicates"] }
+  ],
+  "binarySamples": [
+    { "id": "found-middle", "label": "Found at Middle", "array": [2, 5, 8, 12, 16, 23, 38], "target": 12, "tags": ["small", "found"] },
+    { "id": "found-left", "label": "Found Left Half", "array": [3, 7, 11, 15, 19, 24, 31, 42], "target": 7, "tags": ["medium", "found"] },
+    { "id": "not-found", "label": "Not Found", "array": [1, 4, 9, 14, 18, 22, 27, 33, 40], "target": 99, "tags": ["medium", "not-found"] },
+    { "id": "found-right", "label": "Found Right Half", "array": [10, 20, 30, 40, 50, 60, 70], "target": 60, "tags": ["small", "found"] },
+    { "id": "single-found", "label": "Single Element Found", "array": [42], "target": 42, "tags": ["edge-case", "single"] },
+    { "id": "single-not-found", "label": "Single Not Found", "array": [42], "target": 99, "tags": ["edge-case", "single"] },
+    { "id": "two-elements", "label": "Two Elements", "array": [5, 10], "target": 5, "tags": ["edge-case", "small"] },
+    { "id": "large-found", "label": "Large Found", "array": [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47], "target": 23, "tags": ["large", "found"] }
+  ]
+}

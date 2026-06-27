@@ -1,0 +1,12 @@
+{
+  "description": "Sample queue values for visualization and testing",
+  "samples": [
+    { "id": "small-queue", "label": "Small Queue", "data": [10, 20, 30, 40], "tags": ["small"] },
+    { "id": "medium-queue", "label": "Medium Queue", "data": [5, 15, 25, 35, 45], "tags": ["medium"] },
+    { "id": "large-queue", "label": "Large Queue", "data": [100, 200, 300, 400, 500, 600], "tags": ["large"] },
+    { "id": "single-element", "label": "Single Element", "data": [42], "tags": ["edge-case", "single"] },
+    { "id": "two-elements", "label": "Two Elements", "data": [8, 3], "tags": ["edge-case", "small"] },
+    { "id": "alternating", "label": "Alternating", "data": [1, 10, 2, 20, 3, 30], "tags": ["medium", "patterned"] },
+    { "id": "with-negatives", "label": "With Negatives", "data": [-5, 0, 7, -3, 12], "tags": ["small", "edge-case"] }
+  ]
+}

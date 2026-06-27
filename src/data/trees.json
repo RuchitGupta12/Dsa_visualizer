@@ -1,0 +1,13 @@
+{
+  "description": "Sample tree values (level-order) for visualization and testing",
+  "samples": [
+    { "id": "balanced-small", "label": "Balanced Small", "data": [50, 30, 70, 20, 40, 60, 80], "tags": ["small", "balanced"] },
+    { "id": "balanced-medium", "label": "Balanced Medium", "data": [40, 20, 60, 10, 30, 50, 70], "tags": ["medium", "balanced"] },
+    { "id": "unbalanced-left", "label": "Unbalanced Left", "data": [25, 15, 35, 10, 20, 30, 40, 5, 12], "tags": ["medium", "unbalanced"] },
+    { "id": "skewed-right", "label": "Right-Skewed", "data": [10, null, 20, null, null, null, 30], "tags": ["edge-case", "skewed"] },
+    { "id": "single-root", "label": "Single Root", "data": [42], "tags": ["edge-case", "single"] },
+    { "id": "full-tree", "label": "Full Tree", "data": [100, 50, 150, 25, 75, 125, 175, 10, 30, 60, 90], "tags": ["large", "full"] },
+    { "id": "left-skewed", "label": "Left-Skewed", "data": [50, 40, null, 30, null, null, null, 20], "tags": ["edge-case", "skewed"] },
+    { "id": "incomplete", "label": "Incomplete Tree", "data": [20, 10, 30, 5, null, null, 40], "tags": ["small", "incomplete"] }
+  ]
+}
