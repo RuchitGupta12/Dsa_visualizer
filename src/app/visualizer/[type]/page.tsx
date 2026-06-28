@@ -101,7 +101,7 @@ export default function VisualizerPage() {
             </div>
 
             {/* Side panel: explanation + complexity */}
-            <div className="w-full overflow-y-auto p-6 lg:w-80 xl:w-96">
+            <div className="w-full overflow-y-auto p-4 lg:w-80 lg:p-6 xl:w-96">
               <LearningPanel type={type} />
               <div className="mt-4">
                 <AIExplanation type={type} />

@@ -101,7 +101,7 @@ export function QueueVisualizer() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center px-2 py-4" style={{ minHeight: 260 }}>
+      <div className="flex items-center justify-center overflow-x-auto px-2 py-4" style={{ minHeight: 260 }}>
         <div className="flex items-center gap-1">
           <AnimatePresence mode="popLayout">
             {items.map((item, i) => (
@@ -116,19 +116,19 @@ export function QueueVisualizer() {
                 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ type: 'spring', damping: 20, stiffness: 200 }}
-                className="relative flex flex-col items-center"
+                className="relative flex shrink-0 flex-col items-center"
               >
                 {(i === 0 || item.state === 'front') && items.length > 0 && (
-                  <span className="mb-1 text-xs font-semibold text-indigo-500">Front</span>
+                  <span className="mb-1 whitespace-nowrap text-xs font-semibold text-indigo-500">Front</span>
                 )}
                 <div
-                  className="flex h-14 w-16 items-center justify-center rounded-lg text-sm font-bold text-white shadow-sm"
+                  className="flex h-12 w-14 items-center justify-center rounded-lg text-sm font-bold text-white shadow-sm sm:h-14 sm:w-16"
                   style={{ backgroundColor: getColor(item.state) }}
                 >
                   {item.value}
                 </div>
                 {(i === items.length - 1 || item.state === 'rear') && items.length > 0 && (
-                  <span className="mt-1 text-xs font-semibold text-purple-500">Rear</span>
+                  <span className="mt-1 whitespace-nowrap text-xs font-semibold text-purple-500">Rear</span>
                 )}
               </motion.div>
             ))}

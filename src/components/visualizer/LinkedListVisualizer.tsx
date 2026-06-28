@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { ListNode, Step } from '@/types'
 import {
@@ -132,6 +132,14 @@ export function LinkedListVisualizer() {
   const svgWidth = Math.max(items.length * (NODE_W + GAP) + GAP, 400)
   const svgHeight = 260
 
+  const [isMobile, setIsMobile] = useState(false)
+  const checkMobile = useCallback(() => setIsMobile(window.innerWidth < 640), [])
+  useEffect(() => {
+    checkMobile()
+    addEventListener('resize', checkMobile)
+    return () => removeEventListener('resize', checkMobile)
+  }, [checkMobile])
+
   return (
     <div className="flex flex-col">
       <div className="flex flex-wrap items-center gap-2 border-b border-zinc-200 px-4 py-2 dark:border-zinc-700">
@@ -176,7 +184,13 @@ export function LinkedListVisualizer() {
       </div>
 
       <div className="flex items-center justify-center px-2 py-4" style={{ minHeight: 260 }}>
-        <svg width={svgWidth} height={svgHeight} className="overflow-visible">
+        <svg
+          width={isMobile ? undefined : svgWidth}
+          height={isMobile ? undefined : svgHeight}
+          viewBox={isMobile ? `0 0 ${svgWidth} ${svgHeight}` : undefined}
+          className={isMobile ? 'w-full overflow-visible' : 'overflow-visible'}
+          preserveAspectRatio={isMobile ? 'xMidYMid meet' : undefined}
+        >
           <defs>
             <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
               <polygon points="0 0, 10 3.5, 0 7" fill="#71717a" />

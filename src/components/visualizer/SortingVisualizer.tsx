@@ -114,11 +114,11 @@ export function SortingVisualizer({ type }: Props) {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-2 px-2 py-4" style={{ minHeight: 260 }}>
+      <div className="flex items-center justify-center gap-1 overflow-x-auto px-2 py-4 sm:gap-2" style={{ minHeight: 260 }}>
         {items.map((item, i) => (
-          <div key={item.id} className="flex flex-col items-center">
+          <div key={item.id} className="flex shrink-0 flex-col items-center">
             <div
-              className="flex w-12 items-end justify-center rounded-t-lg text-xs font-bold text-white transition-all"
+              className="flex w-8 items-end justify-center rounded-t-lg text-xs font-bold text-white transition-all sm:w-12"
               style={{
                 height: `${Math.max((item.value / maxVal) * 280, 36)}px`,
                 backgroundColor: COLORS[item.state],
